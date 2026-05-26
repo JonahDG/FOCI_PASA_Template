@@ -1,0 +1,141 @@
+\documentclass[
+  journal=pasa,
+  manuscript=research-paper, %% or "review"
+  year=2026, 2163
+  volume=YY,
+]{cup-journal}
+
+\usepackage{lipsum}
+
+\usepackage{amsmath}
+\usepackage{amssymb,microtype,siunitx,booktabs}
+
+
+\usepackage{tocloft}
+\usepackage{lineno}
+\usepackage{booktabs}
+\usepackage{setspace}
+% \usepackage{mathtools} 
+\usepackage{tipa}
+% For git logo
+\usepackage{academicons} 
+\usepackage{fontawesome5}
+
+\usepackage{tikz}
+\usepackage[rightcaption]{sidecap}
+\usepackage{caption}
+
+% Define colors from hex codes
+\definecolor{color1}{HTML}{1f77b4} %Blue
+\definecolor{color2}{HTML}{ff7f0e} %Orange
+\definecolor{color3}{HTML}{2ca02c} % green
+\definecolor{color4}{HTML}{d62728} %red
+
+
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{relsize}
+
+\usepackage{listings}
+\usepackage{multirow}
+% \let\bibhang\relax
+
+
+
+\usepackage{longtable}
+\usepackage{acro}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    linkcolor={color1},
+    citecolor={color1},
+    urlcolor={color1}
+}
+\usepackage{cleveref}
+\usepackage{xspace}
+
+\acsetup{
+  single    = false,
+  list/sort  = true,
+  cite/group = true,
+  cite/group/cmd = \citealt,
+  cite/group/pre = {; \xspace},
+  patch/longtable=false,
+}
+
+
+% Acronyms
+\input{acro_name_commands}
+
+
+\sisetup{detect-all,separate-uncertainty=true}
+\title[Short Title]{Long Title}
+
+\author{\href{https://orcid.org/0000-0001-7138-0563}{Jonah~Goldfine}}
+\affiliation{School of Mathematical \& Physical Sciences, Macquarie University, 12 Wally's Walk, Macquarie Park, NSW 2113, Australia}
+\alsoaffiliation{Astrophysics and Space Technologies Research Centre, Macquarie University, Macquarie Park, NSW 2109, Australia}
+
+
+\email[Jonah~Goldfine]{\href{mailto:jonah.goldfine@mq.edu.au}{jonah.goldfine@mq.edu.au} \href{https://github.com/JonahDG}{\faGithub}}
+
+
+
+%\handlingeditor{Excellent E Editor}
+
+%\doi{10.1017/pasa.2020.32}
+
+\received {dd Mmm YYYY}
+\revised  {dd Mmm YYYY}
+\accepted {dd Mmm YYYY}
+\published{dd Mmm YYYY}
+
+\keywords{XXXXXXXXXXXXX} 
+\begin{document}
+
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Introduction}\label{sec:int}
+\lipsum[1]
+Citation \citep{amigo} \cite{dorito}
+
+\section{Section 2}
+\label{sec:2.}
+\lipsum[2]
+
+
+\subsection{Section 2.1}
+\lipsum[3-4]
+
+
+\subsubsection{Section 2.1.1}
+\lipsum[5]
+
+
+
+
+\begin{acknowledgement}
+
+% acknowledge individuals
+
+% land acknowledgements
+We acknowledge and pay respect to the traditional owners of the land on which the University of Sydney and Macquarie University are situated, upon whose unceded, sovereign, ancestral lands we work. We pay respects to their Ancestors and descendants, who continue cultural and spiritual connections to Country. 
+
+
+
+
+% KECK SPECTRUM ACKNOWLEDGEMENTS
+% This research has made use of the Keck Observatory Archive (KOA), which is operated by the W. M. Keck Observatory and the NASA Exoplanet Science Institute (NExScI), under contract with the National Aeronautics and Space Administration.
+
+
+\end{acknowledgement}
+
+
+
+\bibliography{bibtemplate}
+
+%\appendix
+
+\end{document}
